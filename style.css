@@ -41,3 +41,14 @@ p {
 #galvenais-virsraksts {
     color: white;
 }
+
+nav a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+    background-color: yellow;
+}
