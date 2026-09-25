@@ -79,3 +79,15 @@ h2 {
 #spec-virsraksts {
     color: purple;
 }
+
+section {
+    border: 2px solid #1a5fb4;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
