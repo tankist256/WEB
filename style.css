@@ -61,3 +61,21 @@ input[type="email"] {
     border: 2px solid blue;
     background-color: lightyellow;
 }
+
+/* 8 - divi vienadi selektori, uzvar otrais jo tas ir velak */
+h2 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+/* 9 - uzvar ID, jo ID ir stiplaks par klasi un elementu */
+.spec-virsraksts {
+    color: green;
+}
+
+#spec-virsraksts {
+    color: purple;
+}
