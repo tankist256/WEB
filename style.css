@@ -3,3 +3,17 @@ body {
     color: rgb(30, 30, 30);
     background-color: white;
 }
+
+header {
+    background-color: #1a5fb4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    background-color: #1a5fb4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
