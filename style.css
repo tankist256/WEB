@@ -34,6 +34,18 @@ p {
     line-height: 1.6;
 }
 
+section {
+    border: 2px solid #1a5fb4;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .izcelts {
     background-color: yellow;
 }
@@ -71,7 +83,6 @@ h2 {
     color: red;
 }
 
-/* 9 - uzvar ID, jo ID ir stiplaks par klasi un elementu */
 .spec-virsraksts {
     color: green;
 }
@@ -80,14 +91,42 @@ h2 {
     color: purple;
 }
 
-section {
-    border: 2px solid #1a5fb4;
-    border-radius: 8px;
-    padding: 12px;
-    margin-bottom: 15px;
+.kartite {
+    width: 280px;
+    padding: 15px;
+    border: 4px solid black;
+    box-sizing: border-box;
 }
 
-main {
-    max-width: 900px;
-    margin: 0 auto;
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+table {
+    border: 6px solid rgb(72, 254, 6);
+}
+
+td, th {
+    border: 5px solid rgb(165, 16, 16);
+    padding: 7px;
+}
+
+input, textarea {
+    display: block;
+    margin: 5px 5px 17px;
+    padding: 8px;
+    width: 300px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    border: 3px solid rgb(183, 14, 192);
+    border-radius: 19px;
+    width: 100%;
 }
