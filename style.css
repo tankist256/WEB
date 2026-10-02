@@ -130,3 +130,53 @@ input, textarea {
     border-radius: 19px;
     width: 100%;
 }
+
+/* 1 - block: header, section, p (aiznem visu rindinu un sak jaunu rindu) */
+/* 1 - inline: a, span, b (stav teksta rinda, width nestrada) */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+span.izcelts {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+}
+/* 3 - ar inline width un height nekas nemainas, jo inline tos ignorē */
+/* 3 - ar inline-block jau strādā, jo tas ir kā block bet paliek rindā */
+
+form label {
+    display: block;
+}
+
+form button {
+    display: block;
+    margin-top: 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+/* 5 - margin 0 auto nestrādāja kamēr img bija inline, jo auto malas strādā tikai block elementam */
+
+nav a {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+/* 6 - display none elementu nonem pavisam, vieta pazud */
+/* 6 - visibility hidden tikai paslepj, vieta paliek */
+/* 6 - piemers (izslegts): aside { display: none; } footer { visibility: hidden; } */
+
+/* 7 - block: (a) ja sāk jaunu rindu (b) width/height strādā (c) bez width ir pilns platums */
+/* 7 - inline: (a) nesāk jaunu rindu (b) width/height nestrādā (c) tik plats cik saturs */
+/* 7 - inline-block: (a) nesāk jaunu rindu (b) width/height strādā (c) tik plats cik saturs, bet var dot izmeru */
