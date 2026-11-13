@@ -24,7 +24,7 @@ Sākotnējā repozitorijā bija tikai profila lapa un `style.css`. Vizītkarte p
 
 6. **README.** Pievienota klikšķināma vietnes adrese un šie septiņi N10 komentāri. Failu labojumi tiek veikti lokāli un publicēti ar `git push`.
 
-7. **Atjaunināšana.** Pēc pirmās publicēšanas sākumlapas kājenē pievienots `Atjaunināts 13.11.2026`. Atsevišķā atjauninājuma gaidīšanas laiks tiek mērīts. Pēc `git push` GitHub Pages palaiž vietnes būvēšanu un izvietošanu, pēc tam jaunie faili ir pieejami vietnes adresē. Pārlūka kešatmiņas dēļ var būt vajadzīgs `Ctrl+F5`.
+7. **Atjaunināšana.** Pēc pirmās publicēšanas sākumlapas kājenē pievienots `Atjaunināts 13.11.2026`. Jaunais datums tiešsaistē parādījās aptuveni 38 sekundes jeb 0,6 minūtes pēc atsevišķā `git push` sākuma (pārbaudes intervāls 5 s, pieprasījumi bez kešatmiņas). [Datuma atjauninājuma Actions darbs](https://github.com/tankist256/WEB/actions/runs/43400231776). Pēc `git push` GitHub Pages palaiž vietnes būvēšanu un izvietošanu, pēc tam jaunie faili ir pieejami vietnes adresē. Pārlūka kešatmiņas dēļ var būt vajadzīgs `Ctrl+F5`.
 
 ## Pārbaude lokāli
 
