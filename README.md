@@ -16,15 +16,15 @@ Sākotnējā repozitorijā bija tikai profila lapa un `style.css`. Vizītkarte p
 
 2. **Sākumlapa.** `index.html` ir mapes noklusējuma sākumlapa: atverot vietnes adresi bez faila nosaukuma, serveris parāda šo failu. Saites `vizitkarte/index.html` un `Marks%20Berjozins.html` ir relatīvas; `%20` apzīmē atstarpi esošā profila faila nosaukumā.
 
-3. **Publicēšana.** GitHub Pages jāpublicē no `main` zara saknes `/`. Pirmās izvietošanas rezultāts un gaidīšanas laiks tiks ierakstīti pēc pārbaudes.
+3. **Publicēšana.** Ieslēgts GitHub Pages režīms “Deploy from a branch”, zars `main`, mape `/` (root). Adrese: [https://tankist256.github.io/WEB/](https://tankist256.github.io/WEB/). Pirmā sākumlapa bija pieejama aptuveni 44 sekundēs jeb 0,7 minūtēs pēc Pages ieslēgšanas (pārbaudes intervāls 5 s). [Pirmā Actions izvietošana](https://github.com/tankist256/WEB/actions/runs/43399984763) pabeigta sekmīgi.
 
-4. **Failu ceļi.** Sākotnējie attēli norādīja uz `/home/tankist256/...`, kas GitHub Pages serverī neeksistē. Tie aizstāti ar repozitorijā saglabātu SVG koda vietturi un relatīvu ceļu. Tiešsaistes saišu un resursu pārbaude sekos pēc publicēšanas.
+4. **Failu ceļi.** Sākotnējie attēli norādīja uz `/home/tankist256/...`, kas GitHub Pages serverī neeksistē. Tie aizstāti ar repozitorijā saglabātu SVG koda vietturi un relatīvu ceļu. Publicētajā vietnē pārbaudīts ceļš sākumlapa → vizītkarte → profils → sākumlapa, sadaļu saites, visi 10 attēli, abi sākumlapas darbu linki un visu trīs lapu CSS. Visi vietējie lapu un resursu pieprasījumi atgrieza HTTP 200; pārlūka pārbaudē nebija 404 vai JavaScript kļūdu.
 
 5. **Telefons.** Chrome pārbaudīti 320 × 740, 390 × 844, 844 × 390 un 1280 × 900 skati: visās trīs lapās nav horizontālas ritjoslas. Pie 390 px profila navigācija ir 2 × 2, galerija ir divās kolonnās un virsraksts ir 26 px; pie 320 px galerija ir vienā kolonnā. Pārbaude īstā telefonā vēl jāveic: atvērt vietni vertikāli un horizontāli un salīdzināt ar 390 px pārlūka skatu. Īstas ierīces novērojumi vēl nav pieejami.
 
 6. **README.** Pievienota klikšķināma vietnes adrese un šie septiņi N10 komentāri. Failu labojumi tiek veikti lokāli un publicēti ar `git push`.
 
-7. **Atjaunināšana.** Pēc pirmās publicēšanas sākumlapas kājenē tiks pievienots `Atjaunināts 13.11.2026` un izmērīts atjauninājuma gaidīšanas laiks. Pēc `git push` GitHub Pages palaiž vietnes būvēšanu un izvietošanu, pēc tam jaunie faili ir pieejami vietnes adresē. Pārlūka kešatmiņas dēļ var būt vajadzīgs `Ctrl+F5`.
+7. **Atjaunināšana.** Pēc pirmās publicēšanas sākumlapas kājenē pievienots `Atjaunināts 13.11.2026`. Atsevišķā atjauninājuma gaidīšanas laiks tiek mērīts. Pēc `git push` GitHub Pages palaiž vietnes būvēšanu un izvietošanu, pēc tam jaunie faili ir pieejami vietnes adresē. Pārlūka kešatmiņas dēļ var būt vajadzīgs `Ctrl+F5`.
 
 ## Pārbaude lokāli
 
