@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="lv">
 <head>
-    <title>MANA DIGITALA VIZITKARTE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Berjozins | Profils</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="main-container">
@@ -10,11 +12,12 @@
 <h1 id="galvenais-virsraksts">Marks Berjozins</h1>
 </header>
 
-<nav>
+<nav aria-label="Galvenā navigācija">
 <ul>
-<li><a href="#abaout">abaout</a></li>
-<li><a href="#SKILL">my skils</a></li>
-<li><a href="#contacts">my contacts</a></li>
+<li><a href="index.html">Sākumlapa</a></li>
+<li><a href="#about">Par mani</a></li>
+<li><a href="#skills">Prasmes</a></li>
+<li><a href="#contacts">Kontakti</a></li>
 </ul>
 </nav>
 
@@ -23,7 +26,7 @@
 <p>aside</p>
 </aside>
 
-<section id="abaout">
+<section id="about">
 <h2>about me</h2>
 
 <article class="kartite">
@@ -49,24 +52,24 @@
 <p>this is a <mark>MARK</mark> in a mark. mans <span class="izcelts">izcelts teksts</span> te.</p>
 <p> Mierinsh today <del>red</del> blue.</p>
 
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="mans kods">
+<img src="assets/code-preview.svg" alt="HTML koda piemērs: virsraksts un rindkopa zilā koda redaktorā" width="720" height="420">
 <br>
 <a href="https://family.mykoob.lv/?profile">MYKOOB</a>
 
 <div class="image-grid">
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="bilde 1">
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="bilde 2">
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="bilde 3">
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="bilde 4">
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="bilde 5">
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="bilde 6">
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="bilde 7">
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="bilde 8">
-<img src="/home/tankist256/Screenshot From 2026-09-11 11-03-16.png" alt="bilde 9">
+<img src="assets/code-preview.svg" alt="Koda ilustrācija galerijas 1. attēlā" width="720" height="420" loading="lazy">
+<img src="assets/code-preview.svg" alt="Koda ilustrācija galerijas 2. attēlā" width="720" height="420" loading="lazy">
+<img src="assets/code-preview.svg" alt="Koda ilustrācija galerijas 3. attēlā" width="720" height="420" loading="lazy">
+<img src="assets/code-preview.svg" alt="Koda ilustrācija galerijas 4. attēlā" width="720" height="420" loading="lazy">
+<img src="assets/code-preview.svg" alt="Koda ilustrācija galerijas 5. attēlā" width="720" height="420" loading="lazy">
+<img src="assets/code-preview.svg" alt="Koda ilustrācija galerijas 6. attēlā" width="720" height="420" loading="lazy">
+<img src="assets/code-preview.svg" alt="Koda ilustrācija galerijas 7. attēlā" width="720" height="420" loading="lazy">
+<img src="assets/code-preview.svg" alt="Koda ilustrācija galerijas 8. attēlā" width="720" height="420" loading="lazy">
+<img src="assets/code-preview.svg" alt="Koda ilustrācija galerijas 9. attēlā" width="720" height="420" loading="lazy">
 </div>
 </section>
 
-<section id="SKILL">
+<section id="skills">
 <h2 id="spec-virsraksts" class="spec-virsraksts">skils</h2>
 <table>
 <tr>
@@ -87,15 +90,16 @@
 <section id="contacts">
 <h2>contact with me</h2>
 <form>
-<label for="name">your personal id</label>
-<input type="text" name="name">
+<label for="name">Tavs vārds</label>
+<input type="text" id="name" name="name" autocomplete="name">
 
-<label>email</label>
-<input type="email"><br><br>
+<label for="email">E-pasts</label>
+<input type="email" id="email" name="email" autocomplete="email"><br><br>
 
-<label>message</label><br>
-<textarea rows="4" cols="50"></textarea><br><br>
+<label for="message">Ziņa</label><br>
+<textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
 
+<p>Mācību forma: ziņas netiek nosūtītas.</p>
 <button type="button">do not press this button</button>
 </form>
 </section>

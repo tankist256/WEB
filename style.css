@@ -1,7 +1,13 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(30, 30, 30);
     background-color: white;
+    overflow-wrap: anywhere;
 }
 
 header {
@@ -23,7 +29,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: clamp(26px, 5vw, 32px);
 }
 
 h2 {
@@ -44,6 +50,7 @@ section {
 main {
     max-width: 900px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 .izcelts {
@@ -93,6 +100,7 @@ h2 {
 
 .kartite {
     width: 280px;
+    max-width: 100%;
     padding: 15px;
     border: 4px solid black;
     box-sizing: border-box;
@@ -113,14 +121,19 @@ td, th {
 
 input, textarea {
     display: block;
-    margin: 5px 5px 17px;
+    margin: 5px 0 17px;
     padding: 8px;
     width: 300px;
+    max-width: 100%;
+}
+
+textarea {
+    resize: vertical;
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
     margin-top: 20px;
 }
@@ -137,11 +150,19 @@ input, textarea {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 16px auto;
+    max-width: 868px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+nav {
+    padding: 0 16px;
 }
 
 nav li {
-    display: inline-block;
-    margin-right: 10px;
+    min-width: 0;
 }
 
 span.izcelts {
@@ -165,12 +186,37 @@ img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+    height: auto;
 }
 /* 5 - margin 0 auto nestrādāja kamēr img bija inline, jo auto malas strādā tikai block elementam */
 
 nav a {
-    padding: 8px 16px;
+    display: block;
+    padding: 12px 10px;
     border-radius: 8px;
+    text-align: center;
+}
+
+nav a:focus-visible {
+    outline: 3px solid #1a5fb4;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .image-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
 
 /* 6 - display none elementu nonem pavisam, vieta pazud */

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img" aria-labelledby="title description">
+  <title id="title">HTML koda piemērs</title>
+  <desc id="description">Neitrāla koda redaktora ilustrācija ar virsrakstu un rindkopu.</desc>
+  <rect width="720" height="420" rx="20" fill="#eaf2fc"/>
+  <rect x="24" y="24" width="672" height="372" rx="14" fill="#112b4a"/>
+  <path d="M38 24h644a14 14 0 0 1 14 14v40H24V38a14 14 0 0 1 14-14" fill="#1a5fb4"/>
+  <g fill="#fff">
+    <circle cx="49" cy="51" r="6"/>
+    <circle cx="71" cy="51" r="6" opacity=".7"/>
+    <circle cx="93" cy="51" r="6" opacity=".4"/>
+  </g>
+  <g font-family="monospace" font-size="25">
+    <text x="52" y="131" fill="#8cbbff">&lt;main&gt;</text>
+    <text x="79" y="187" fill="#f5d67e">&lt;h1&gt;Sveika, pasaule!&lt;/h1&gt;</text>
+    <text x="79" y="243" fill="#b5e7bd">&lt;p&gt;Mana pirmā vietne.&lt;/p&gt;</text>
+    <text x="52" y="299" fill="#8cbbff">&lt;/main&gt;</text>
+  </g>
+  <rect x="52" y="339" width="170" height="9" rx="4" fill="#4879af"/>
+  <rect x="236" y="339" width="80" height="9" rx="4" fill="#4879af" opacity=".6"/>
+</svg>
